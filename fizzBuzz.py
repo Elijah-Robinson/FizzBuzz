@@ -1,15 +1,9 @@
-def fizz_buzz():
-    result = ""
-    for i in range(1, 101):
-        if i % 3 == 0 and i % 5 == 0:
-            result += "FizzBuzz\n"
-        elif i % 3 == 0:
-            result += "Fizz\n"
-        elif i % 5 == 0:
-            result += "Buzz\n"
-        else:
-            result += str(i) + "\n"
-    return result
-
-output = fizz_buzz()
-print(output)
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
